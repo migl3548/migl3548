@@ -1,0 +1,56 @@
+html {
+    overflow:scroll
+}
+
+h1 {
+    font-family: Helvetica, sans-serif;
+    
+}
+
+h2 {
+    font-family: Helvetica, sans-serif;
+}
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+p {
+    font-family: Helvetica, sans-serif;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+a {
+    font-family: Helvetica, sans-serif;
+}
+
+.toc {
+    font-family: Helvetica, sans-serif;
+    border: solid;
+    position: fixed;
+    top: 20px;
+    right: 80px;
+    width: 300px;
+}
+
+.blurb {
+    font-family: Helvetica, sans-serif;
+    border: solid;
+    position: fixed;
+    top: 200px;
+    right: 80px;
+    width: 300px;
+}
+
+.pagecontent{
+    font-family: Helvetica, sans-serif;
+    
+    margin-top: 80px;
+    max-width: 900px;
+}
+
