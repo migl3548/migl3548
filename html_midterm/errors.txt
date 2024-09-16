@@ -1,0 +1,26 @@
+Line 1: Missing DOCTYPE html
+Line 2: language="en" should just be "lang=en"
+Line 7: language="en" should be in the opening html tag
+Line 8: added closing head tag
+Line 11: no closing h1 tag
+Line 13: no opening p tag
+Line 21: closing li tag where there should be opening li tag in item 6
+Line 26: should be closing ol tag not ul
+Line 28: needs closing p tag
+Line 30: path should be "image.jpg"
+Line 30: needs alt text
+Line 32: needs a closing tag, not img closing tag
+Line 41: needs closing td tag after 25
+Line 47: needs closing table tag
+Line 49: source="error.jpg" should be src="error.jpg"
+Line 49: error.jpeg should be error.jpg
+Line 51: needs p tag
+Line 51: needs s tag
+Line 53: needs correct css
+Line 57: needs closing comment tag
+Line 59: needs closing a tag
+Line 61: underlined text uses u instead of em
+Line 61: u should be closed before p
+Line 64: should be dt instead of li 
+Line 65: should be dd instead of li 
+Line 67: h3 tag should be closing h2 tag
