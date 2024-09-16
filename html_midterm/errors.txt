@@ -1,26 +1,30 @@
-Line 1: Missing DOCTYPE html
-Line 2: language="en" should just be "lang=en"
-Line 7: language="en" should be in the opening html tag
-Line 8: added closing head tag
-Line 11: no closing h1 tag
-Line 13: no opening p tag
-Line 21: closing li tag where there should be opening li tag in item 6
-Line 26: should be closing ol tag not ul
-Line 28: needs closing p tag
-Line 30: path should be "image.jpg"
-Line 30: needs alt text
-Line 32: needs a closing tag, not img closing tag
-Line 41: needs closing td tag after 25
-Line 47: needs closing table tag
-Line 49: source="error.jpg" should be src="error.jpg"
-Line 49: error.jpeg should be error.jpg
-Line 51: needs p tag
-Line 51: needs s tag
-Line 53: needs correct css
-Line 57: needs closing comment tag
-Line 59: needs closing a tag
-Line 61: underlined text uses u instead of em
-Line 61: u should be closed before p
-Line 64: should be dt instead of li 
-Line 65: should be dd instead of li 
-Line 67: h3 tag should be closing h2 tag
+find_errors.html
+1. Line 1: Missing DOCTYPE html
+2. Line 2: language="en" should just be "lang=en"
+3. Line 7: language="en" should be in the opening html tag
+4. Line 8: added closing head tag
+5. Line 11: no closing h1 tag
+6. Line 13: no opening p tag
+7. Line 21: closing li tag where there should be opening li tag in item 6
+8. Line 26: should be closing ol tag not ul
+9. Line 28: needs closing p tag
+10. Line 30: path should be "image.jpg"
+11. Line 30: needs alt text
+12. Line 32: needs a closing tag, not img closing tag
+13. Line 41: needs closing td tag after 25
+14. Line 47: needs closing table tag
+15. Line 49: source="error.jpg" should be src="error.jpg"
+16. Line 49: error.jpeg should be error.jpg
+17. Line 51: needs p tag
+18. Line 51: needs s tag
+19. Line 53: needs correct css
+20. Line 57: needs closing comment tag
+21. Line 59: needs closing a tag
+22. Line 61: underlined text uses u instead of em
+23. Line 61: u should be closed before p
+24. Line 64: should be dt instead of li 
+25. Line 65: should be dd instead of li 
+26. Line 67: h3 tag should be closing h2 tag
+
+find_errors_2.html
+27. 
