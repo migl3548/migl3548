@@ -27,4 +27,18 @@ find_errors.html
 26. Line 67: h3 tag should be closing h2 tag
 
 find_errors_2.html
-27. 
+1. Line 2: added opening html tag
+2. Line 5: added closing head tag
+3. Line 6: fixed opening body tag
+4. Line 7: moved the h1 out of the head 
+5. Line 8: removed the extra html tag
+6. Line 10: added closing <strong> tag
+7. Line 10: added closing p tag
+8. Line 11: added closing div tag
+9. Line 12: fixed image tag to use src
+10. Line 12: fixed image file name
+11. Line 14: added opening h2 tag
+12. Line 16: added opening p tag
+13. Line 17: changed it to a comment
+14. Line 18: added closing body tag
+15. Line 19: fixed closing html tag
