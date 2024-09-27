@@ -1,4 +1,4 @@
-/* General styles - put these straight into your stylesheet */
+/* card 1 */
 
 body {
   margin: 0;
@@ -10,10 +10,6 @@ html {
   background-color: #ccc;
 }
 
-
-
-/* Rulesets to be matched up with selectors */
-
 .card {
   width: 35em;
   height: 22em;
@@ -23,21 +19,23 @@ html {
   border-radius: 1.5em;
 }
 
-.card header {
+.card header, .card footer {
   background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
   border-radius: 1.5em 1.5em 0 0;
-  height: 30px;
-  padding-left: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  height: 3em; 
+  padding: 1em; 
 }
 
 .card footer {
-  background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
-  border-radius: 0 0 1.5em 1.5em;
-  font-size: 15px;
-  padding-left: 10px;
-  padding-bottom: 10px;
+  font-size: 1.5em; 
+  line-height: 3em; 
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.card article {
+  height: 12em;
+  background-color: rgba(0, 0, 0, 0.3); 
 }
 
 .card article img {
@@ -46,21 +44,65 @@ html {
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 2em; 
+  line-height: 3em; 
 }
-.h2, p{
+
+h2, p {
   margin: 0;
 }
 
-article {
-  height: 120px;
-  background-color: rgba(0,0,0,0.3)
+.card article p {
+  color: white; 
+  padding-left: 1em; 
+  padding-top: 1em;
 }
 
-article p{
-  color:white;
-  padding-left: 10px;
+/*card 2 */
+.card2 {
+  width: 35em;
+  height: 22em;
+  margin: 5em auto;
+  background-color: rgb(50, 147, 213);
+  border: 0.2em solid black;
+  border-radius: 1.5em;
 }
 
+.card2 header, .card2 footer {
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
+  border-radius: 1.5em 1.5em 0 0;
+  height: 3em; 
+  padding: 1em; 
+}
 
+.card2 footer {
+  font-size: 1.5em; 
+  line-height: 3em; 
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
 
+.card2 article {
+  height: 12em;
+  background-color: rgba(0, 0, 0, 0.3); 
+}
+
+.card2 article img {
+  max-height: 100%;
+  float: right;
+}
+
+h2 {
+  font-size: 2em; 
+  line-height: 3em; 
+}
+
+h2, p {
+  margin: 0;
+}
+
+.card2 article p {
+  color: white; 
+  padding-left: 1em; 
+  padding-top: 1em;
+}
