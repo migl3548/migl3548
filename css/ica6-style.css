@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #ccc;
+}
+
+article {
+  width: 100vw;
+  height: 297mm;
+  margin: 20px auto;
+  position: relative;
+  background: #ccc;
+}
+
+address {
+  position: absolute;
+  bottom: 90mm;
+  right: 20mm;
+  
+}
+
+h1 {
+  position: absolute;
+  top: 12mm;
+  left: 20mm;
+  width: 128px;
+  height: 128px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 44px 0;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  background-image: url("../img/logo.png");
+}
+
+/* Your CSS below here */
+
+#top {
+  position: absolute;
+  top: 0mm;
+  width: 100%;
+  border-top: 1mm solid #ff2020;
+}
+
+#bottom {
+  position: absolute;
+  bottom: 0mm;
+  width: 100%;
+  border-bottom: 1mm solid #ff2020;
+}
