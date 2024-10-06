@@ -1,0 +1,75 @@
+html {
+    overflow:scroll
+}
+
+body {
+    background-image: url("../img/tenzbg2.png");
+    background-size: 100vw 100vh
+    
+}
+
+h1 {
+    font-family: Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    font-family: Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    padding-top: 5%;
+}
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+p {
+    font-family: Helvetica, sans-serif;
+    margin-left:auto;
+    margin-right:auto;
+    padding-left: 10px;
+    color:white;
+}
+
+a {
+    font-family: Helvetica, sans-serif;
+}
+
+
+.overlay1 {
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(5px);
+    width: 300px;
+    height: 650px;
+    border-radius: 25px;
+    filter:drop-shadow(0 0 0.75rem red);
+    position: relative;
+    left: 40px;
+}
+
+.overlay2 {
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(5px);
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
+    filter:drop-shadow(0 0 0.75rem blue);
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+}
+
+hr.rounded {
+    border-radius: 3px;
+  }
+
+#year {
+    padding-top: 50%;
+    color: black;
+}
