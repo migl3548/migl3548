@@ -18,10 +18,12 @@ li a {
     text-decoration: none;
     color: white;
     padding: 10px 30px;
+    transition: color 1s;
 }
 
 li a:hover{
     background-color: darkslategray;
+    color: yellow;
 }
 
 li a:active { 
