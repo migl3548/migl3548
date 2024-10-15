@@ -9,10 +9,11 @@ ul {
     margin: 0;
     padding: 10px 0px;
     justify-content: center; 
+     
 }
 
 li a {
-    text-decoration: nonr;
+    text-decoration: none;
     color: white;
     padding: 10px 30px;
 }
@@ -24,4 +25,24 @@ li a:hover{
 li a:active { 
     background-color: white;
     color: black 
+}
+
+@media screen and (min-width: 800px) {
+	body {
+		background-color: lightgreen;
+	}
+    ul {
+        flex-direction: horizontal;
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+	body {
+		background-color: rgb(92, 130, 186);
+	}
+    ul {
+        flex-direction: column;
+    }
+    
 }
