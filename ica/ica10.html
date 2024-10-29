@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" type="text/css" href="../css/ica10.css" />
+    <head><title>ica10</title></head>
+    <body>
+        
+        <h1>Hi, I'm Ari</h1>
+        <h2 id="myhead">click here</h2>
+        <img id="image" src="../img/noko.png" alt="literally me" width="500" class="center">
+        <p>click the text then click the image</p>
+        
+        
+        <!-- "https://www.youtube.com/watch?v=kG7d_4LeP48" -->
+       
+        <script>
+            document.getElementById("myhead").addEventListener("click", function(e){
+                alert("clicked the head! enjoy a special reward");
+                document.getElementById("myhead").style.color = "blue";
+                // window.location.href = "https://www.youtube.com/watch?v=kG7d_4LeP48";
+                window.open("https://www.youtube.com/watch?v=kG7d_4LeP48", "_blank");
+            })
+
+            document.getElementById("image").addEventListener("click", function(e){
+                alert("BOO!");
+                document.getElementById("image").style.transform = "scale(10)";
+            })
+        </script>
+    </body>
+
+    
+</html>
