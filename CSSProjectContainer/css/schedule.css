@@ -1,10 +1,27 @@
+/* Colors! */
+
+:root{
+    /* We don't have to use all these,
+    just the ones we like. */
+    --vanilla:#FFF3B0;
+    --hunyadiYellow:#E09F3E;
+    --auburn:#9E2A2B;
+    
+    --prettyLightBlue: #43978D;
+    
+    /* To use color, place color with:
+    var(--prettyBlue); */
+    }
+
+/* media query for bigger screens */
 @media screen and (min-width: 1000px) {
 	h1 {
     
         text-align: center;
-        font-family: Helvetica, sans-serif;
+        font-family: "Playfair Display", serif;
         font-size: 80px;
-        color: white;
+
+        color: var(--vanilla);
     }
     
     
@@ -23,14 +40,6 @@
         color: white;
     }
     
-    
-    .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-      }
-    
     p {
         font-family: Helvetica, sans-serif;
         margin-left:auto;
@@ -45,14 +54,32 @@
         text-align: center;
         color: rgb(70, 157, 227);
     }
+
+
+    /* navbar styling */
+    nav a{
+        color:white;
+    }
     
-    /*373A40*/
-    body {background-color: #3c0000;}
+    /* to make the navigation bar black */
+    .navbar-color {
+        background-color: black;
+    }
+
+
+    /*make background black*/
+    body {background-color: black;}
     
+    /* adding a transparent dark background around the header on the parallax image so that it's more visible */
+    .forbettervisibility {
+        background-color: rgb(0, 0, 0, .7);
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     
     .parallax {
         /* The image used */
-        background-image: url(../images/Catherine-Jason-Sinn-1920x400-1.jpg);
+        background-image: url(../images/paul-naslund-roxborough-1920x600-1-1024x320.jpg);
     
         
       
@@ -72,9 +99,9 @@
         top: 60%; /* Adjust positioning */
         left: 50%;
         transform: translate(-50%, -50%); /* Center the text */
-        color: white; /* Text color */
+        color: var(--vanilla); /* Text color */
         text-align: center;
-        font-family: Helvetica, sans-serif;
+        font-family: "Playfair Display", sans-serif;
     }
     
     .events {
@@ -119,13 +146,15 @@
     
 }
 
+/* media query for smaller screens */
 @media screen and (max-width: 1000px) {
+    /* header styling */
     h1 {
     
         text-align: center;
-        font-family: Helvetica, sans-serif;
+        font-family: "Playfair Display", serif;   
         font-size: 80px;
-        color: white;
+        color: var(--vanilla);
     }
     
     
@@ -146,14 +175,6 @@
         font-size: 25px;
     }
     
-    
-    .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-      }
-    
     p {
         font-family: Helvetica, sans-serif;
         margin-left:auto;
@@ -169,13 +190,29 @@
         color: rgb(70, 157, 227);
     }
     
+    /* navbar styling */
+    nav a{
+        color:white;
+    }
+
+    /* to make the navigation bar black */
+    .navbar-color {
+        background-color: black;
+    }
+
     /*373A40*/
-    body {background-color: #3c0000;}
+    body {background-color: black;}
     
+    /* adding a transparent dark background around the header on the parallax image so that it's more visible */
+    .forbettervisibility {
+        background-color: rgb(0, 0, 0, .7);
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     
     .parallax {
         /* The image used */
-        background-image: url(../images/Catherine-Jason-Sinn-1920x400-1.jpg);
+        background-image: url(../images/paul-naslund-roxborough-1920x600-1-1024x320.jpg);
     
         
       
@@ -188,6 +225,8 @@
         background-repeat: no-repeat;
         background-size: contain;
         position: relative;
+        background-color: black;
+
       }
     
       .parallax-text {
@@ -195,7 +234,7 @@
         top: 70%; /* Adjust positioning */
         left: 50%;
         transform: translate(-50%, -50%); /* Center the text */
-        color: white; /* Text color */
+        color: var(--vanilla); /* Text color */
         text-align: center;
         font-family: Helvetica, sans-serif;
         
