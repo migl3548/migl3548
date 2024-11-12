@@ -15,9 +15,10 @@ function fetchData(){
             console.log(myData);
             p.innerHTML = myData;
         })
-        .catch(error => {console.log(error)})
+        .catch(error => {console.log(error); alert("broke")})
 }
-// fetchData();
+
+fetchData();
 
 
 document.getElementById("call").addEventListener("click", e => { fetchData(); });    
