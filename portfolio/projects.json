@@ -1,7 +1,9 @@
 {
     "projects": [{
-        "name": "name1",
-        "description": "d1"
-    }, {"name": "name2",
-        "description": "d2"}]
+        "name": "Project Name 1",
+        "subtitle": "This is the description 1",
+        "abstract": "This is the even longer even longer abstract 1"
+    }, {"name": "Project Name 2",
+        "subtitle": "This is the description 2",
+        "abstract": "This is the even longer even longer abstract 2"}]
 }

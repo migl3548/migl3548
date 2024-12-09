@@ -1,0 +1,14 @@
+#projects { 
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.project{
+    display:flex;
+    flex-direction: row;
+}
+
+.project img{
+   width:20vw; 
+}
