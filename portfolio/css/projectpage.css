@@ -46,27 +46,16 @@ body {
     margin: 0; 
 }
 
-.project h2{
+h2{
     margin-bottom: 5px;
     padding: 10px;
-    font-size: 60px;
+    font-size: 20px;
     font-family: "adapter-mono-pe-variable", sans-serif;
     font-variation-settings: "BORD" 300, "ital" 0, "slnt" 0, "wght" 400;
+    color: white;
 }
 
-.project h3{
-    margin-top: 0;
-    padding: 10px;
-    font-style: italic;
-    font-family: "adapter-mono-pe-variable", sans-serif;
-    font-variation-settings: "BORD" 300, "ital" 0, "slnt" 0, "wght" 200;
-}
 
-.project p{
-    font-family: "adapter-mono-pe-variable", sans-serif;
-    font-variation-settings: "BORD" 300, "ital" 0, "slnt" 0, "wght" 400;
-    padding: 10px;
-}
 
 #buttons {
     display: flex;
@@ -137,4 +126,77 @@ h1 {
     font-variation-settings: "BORD" 300, "ital" 0, "slnt" 0, "wght" 400;
     color: white;
     margin-left: 20vw;
+}
+
+h2{
+    margin-top: 0;
+    padding: 10px;
+    font-style: italic;
+    font-family: "adapter-mono-pe-variable", sans-serif;
+    font-variation-settings: "BORD" 300, "ital" 0, "slnt" 0, "wght" 200;
+    margin-left: 20vw;
+}
+
+p{
+    font-family: "adapter-mono-pe-variable", sans-serif;
+    font-variation-settings: "BORD" 300, "ital" 0, "slnt" 0, "wght" 400;
+    padding: 10px;
+    color: white;
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+/* carousel stuff */
+.carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.carousel-container {
+    position: relative;
+    width: 60vw; /* Match the image width */
+    height: auto;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.displayed-img {
+    width: 100%; /* Ensure the image scales properly */
+    border-radius: 10px; /* Optional: Rounded corners */
+}
+
+#carousel-buttons {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 10px; /* Add spacing between the buttons */
+    margin-top: 10px; /* Space between the image and the buttons */
+    width: 100%; /* Match the carousel container width */
+}
+
+.button-link {
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 25px;
+    color: white;
+    font-family: "adapter-mono-pe-variable", sans-serif;
+    font-variation-settings: "BORD" 300, "ital" 0, "slnt" 0, "wght" 100;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-link:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
+}
+
+#carousel-buttons .button-link {
+    margin: 0; /* Remove default margins */
+    padding: 10px 10px; /* Maintain button padding */
 }
