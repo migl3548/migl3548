@@ -2,8 +2,22 @@
     "projects": [{
         "name": "Project Name 1",
         "subtitle": "This is the description 1",
-        "abstract": "This is the even longer even longer abstract 1"
+        "abstract": "This is the even longer even longer abstract 1",
+        "category": "CS",
+        "subdomain": "project1"
     }, {"name": "Project Name 2",
         "subtitle": "This is the description 2",
-        "abstract": "This is the even longer even longer abstract 2"}]
+        "abstract": "This is the even longer even longer abstract 2",
+        "category": "CS",
+        "subdomain": "project2"},
+        {"name": "Project Name 3",
+        "subtitle": "This is the description 3",
+        "abstract": "This is the even longer even longer abstract 3",
+        "category": "CTD",
+        "subdomain": "projec3"},
+        {"name": "Project Name 4",
+        "subtitle": "This is the description 4",
+        "abstract": "This is the even longer even longer abstract 4",
+        "category": "CTD",
+        "subdomain": "project4"}]
 }

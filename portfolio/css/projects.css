@@ -1,0 +1,105 @@
+body {
+    /* background-image: url('../../portfolio/images/macbg3.png'); */
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+#projects { 
+    display: flex;
+    flex-direction: column;
+    margin: 0 20vw;
+}
+
+.project{
+    display:flex;
+    flex-direction: row;
+    margin-top:10px;
+    padding: 15px 20px;
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+    backdrop-filter: blur(5px); /* Adds blur effect behind the overlay */
+    width: 900px; /* Sets the width */
+    height: 300px; /* Sets the height */
+    border-radius: 25px; /* Rounds the corners */
+    /* filter: drop-shadow(0 0 0.75rem blue); Adds a blue shadow */
+    box-sizing: border-box; /* Ensures padding doesn't affect width/height */
+    overflow: hidden; /* Clips content if it overflows the box */
+    color: white; /* Ensures text color contrasts the background */
+
+    width: 100%; 
+    max-width: 900px; /* Caps the maximum width */
+    height: auto; /* Adjusts height based on content */
+
+    transition: background-color 0.3s ease;
+}
+
+.project:hover {
+    background-color: rgba(255, 255, 255, 0.4); /* Slightly less transparent on hover */
+}
+
+.project img{
+   width:20vw; 
+   border-radius: 15px;
+}
+
+.project h2,
+.project h3 {
+    font-family: Helvetica, sans-serif;
+    margin: 0; /* Removes default margins */
+}
+
+.project h2{
+    margin-bottom: 5px;
+    padding: 10px;
+    font-size: 60px;
+}
+
+.project h3{
+    margin-top: 0;
+    padding: 10px;
+    font-style: italic;
+}
+
+.project p{
+    font-family: Helvetica, sans-serif;
+    padding: 10px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: flex-start; /* Align buttons to the left */
+    align-items: center; /* Vertically center the buttons if needed */
+    margin-bottom: 5px; /* Adds spacing below the buttons */
+    padding-left: 20vw; /* Aligns buttons with the left edge of the project images */
+    margin-top: 150px;
+}
+
+#buttons button {
+    background-color: transparent; /* Transparent background */
+    border: 2px solid white; /* Rounded border with white color */
+    border-radius: 25px; /* Rounded corners */
+    color: white; /* White text */
+    font-family: Helvetica, sans-serif; /* Helvetica font */
+    padding: 10px 20px; /* Adds padding for a better appearance */
+    font-size: 16px; /* Adjust text size */
+    cursor: pointer; /* Adds a pointer cursor for interactivity */
+    margin: 10px; /* Adds spacing between buttons */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover Effect */
+#buttons button:hover {
+    background-color: rgba(255, 255, 255, 1); /* Solid white background */
+    color: black; /* Black text on hover */
+}
+
+.navbar{
+    font-family: Helvetica, sans-serif;
+}
+
+.navbar-brand{
+    font-weight: 700;
+}
+
