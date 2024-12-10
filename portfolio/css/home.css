@@ -67,16 +67,16 @@ body {
     padding: 10px;
 }
 
-#buttons {
+#navbuttons {
     display: flex;
-    justify-content: flex-start; /* Align buttons to the left */
+    justify-content: center; /* Align buttons to the left */
     align-items: center; /* Vertically center the buttons if needed */
     margin-bottom: 5px; /* Adds spacing below the buttons */
-    padding-left: 20vw; /* Aligns buttons with the left edge of the project images */
-    margin-top: 150px;
+    padding-left: 0vw; /* Aligns buttons with the left edge of the project images */
+    margin-top: 5px;
 }
 
-#buttons button {
+#navbuttons button {
     background-color: transparent; /* Transparent background */
     border: 2px solid white; /* Rounded border with white color */
     border-radius: 25px; /* Rounded corners */
@@ -90,9 +90,30 @@ body {
 }
 
 /* Hover Effect */
-#buttons button:hover {
+#navbuttons button:hover {
     background-color: rgba(255, 255, 255, 1); /* Solid white background */
     color: black; /* Black text on hover */
+}
+
+/* Style the links as buttons */
+.button-link {
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 25px;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-link:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
 }
 
 .navbar{
@@ -108,7 +129,23 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 300px;
+    font-size: 10vh;
+    font-family: "adapter-mono-pe-variable", sans-serif;
+    font-variation-settings: "BORD" 300, "ital" 0, "slnt" 0, "wght" 800;
+    text-align: center;
+    margin-top: 30vh;
+}
+
+h2 {
+    font-size: 4vh;
+    font-family: "adapter-mono-pe-variable", sans-serif;
+    font-variation-settings: "BORD" 300, "ital" 0, "slnt" 0, "wght" 200;
+    
+    text-align: center;
+}
+
+img {
+    width: 30vw;
 }
 
 /* TRANSITION STUFF */
@@ -131,6 +168,31 @@ h1,h2 {
     }
 }
 
+/* Typewriter effect for h1 */
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid orange; /* The typewriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Centers the text */
+    margin-top: 30vh;
+    letter-spacing: 0.15em; /* Adjust spacing as needed */
+    max-width: fit-content; /* Ensures the width exactly matches the text */
+    animation: 
+        typing 3.5s steps(20, end), /* Reduce the step count for better accuracy */
+        blink-caret 0.75s step-end infinite;
+}
+
+/* Typing effect */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* Cursor blink effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+}
 
 
 

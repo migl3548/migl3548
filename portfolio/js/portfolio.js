@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", () => {
             // Wait for the animation to complete, then navigate
             setTimeout(() => {
                 window.location.href = href;
-            }, 1000); // Matches the fadeOut duration (1s)
+            }, 01); // Matches the fadeOut duration (1s)
         });
     });
 });

@@ -14,29 +14,25 @@ body {
 }
 
 .project{
-    display:flex;
+    display: flex;
     flex-direction: row;
-    margin-top:10px;
+    margin-top: 10px;
     padding: 15px 20px;
     background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
     backdrop-filter: blur(5px); /* Adds blur effect behind the overlay */
-    width: 900px; /* Sets the width */
-    height: 300px; /* Sets the height */
-    border-radius: 25px; /* Rounds the corners */
-    /* filter: drop-shadow(0 0 0.75rem blue); Adds a blue shadow */
-    box-sizing: border-box; /* Ensures padding doesn't affect width/height */
-    overflow: hidden; /* Clips content if it overflows the box */
-    color: white; /* Ensures text color contrasts the background */
-
-    width: 100%; 
-    max-width: 900px; /* Caps the maximum width */
-    height: auto; /* Adjusts height based on content */
-
-    transition: background-color 0.3s ease;
+    width: 900px;
+    height: 300px;
+    border-radius: 25px;
+    border: 2px solid transparent; /* Start with no visible border */
+    box-sizing: border-box;
+    overflow: hidden;
+    color: white;
+    transition: border-color 0.3s ease; /* Smooth transition for the border */
 }
 
 .project:hover {
-    background-color: rgba(255, 255, 255, 0.4); /* Slightly less transparent on hover */
+    
+    border-color:white;
 }
 
 .project img{
@@ -73,7 +69,7 @@ body {
     align-items: center; /* Vertically center the buttons if needed */
     margin-bottom: 5px; /* Adds spacing below the buttons */
     padding-left: 20vw; /* Aligns buttons with the left edge of the project images */
-    margin-top: 150px;
+    margin-top: 10px;
 }
 
 #buttons button {
@@ -103,3 +99,25 @@ body {
     font-weight: 700;
 }
 
+/* Style the links as buttons */
+.button-link {
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 25px;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: 20vw;
+    margin-top: 20vh;
+}
+
+.button-link:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
+}
