@@ -12,6 +12,27 @@ fetch('./projects.json')
     });
 
 
+// function parseData(data) {
+//     const projectsContainer = document.getElementById("projects");
+//     projectsContainer.innerHTML = ""; 
+
+//     for (let i = 0; i < data.projects.length; i++) {
+//         const project = data.projects[i];
+//         projectsContainer.innerHTML += `
+//             <div class="row project" id="${project.subdomain}">
+//                 <div class="projimg">
+//                     <img src="./images/img(${i + 1}).png" alt="${project.name}">
+//                 </div>
+//                 <div class="description">
+//                     <h2>${project.name}</h2>
+//                     <h3 class="subtitle">${project.subtitle}</h3>
+//                     <p class="abstract">${project.abstract}</p>
+//                 </div>
+//             </div>`;
+//     }
+// }
+
+// added clickable link
 function parseData(data) {
     const projectsContainer = document.getElementById("projects");
     projectsContainer.innerHTML = ""; 
@@ -19,16 +40,18 @@ function parseData(data) {
     for (let i = 0; i < data.projects.length; i++) {
         const project = data.projects[i];
         projectsContainer.innerHTML += `
-            <div class="row project" id="${project.subdomain}">
-                <div class="projimg">
-                    <img src="./images/img(${i + 1}).png" alt="${project.name}">
+            <a href="${project.link}" class="project-link">
+                <div class="row project" id="${project.subdomain}">
+                    <div class="projimg">
+                        <img src="./images/img(${i + 1}).png" alt="${project.name}">
+                    </div>
+                    <div class="description">
+                        <h2>${project.name}</h2>
+                        <h3 class="subtitle">${project.subtitle}</h3>
+                        <p class="abstract">${project.abstract}</p>
+                    </div>
                 </div>
-                <div class="description">
-                    <h2>${project.name}</h2>
-                    <h3 class="subtitle">${project.subtitle}</h3>
-                    <p class="abstract">${project.abstract}</p>
-                </div>
-            </div>`;
+            </a>`;
     }
 }
 
