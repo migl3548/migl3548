@@ -4,7 +4,7 @@ const nextButton = document.querySelector('.next');
 
 /* Declaring the array of image filenames and alt texts */
 const filenames = ["../../portfolio/images/proj2_1.png", "../../portfolio/images/proj2_2.png", "../../portfolio/images/proj2_3.png", "../../portfolio/images/proj2_4.png"];
-const altTexts = ["Image 1", "Image 2", "Image 3", "Image 4", "Image 5"];
+const altTexts = ["Typography Image 1", "Typography Image 2", "Typography Image 3", "Typography Image 4"];
 
 
 let currentIndex = 0;
