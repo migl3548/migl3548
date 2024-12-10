@@ -157,23 +157,23 @@ p{
 
 .carousel-container {
     position: relative;
-    width: 60vw; /* Match the image width */
+    width: 60vw; 
     height: auto;
     overflow: hidden;
     margin: 20px auto;
 }
 
 .displayed-img {
-    width: 100%; /* Ensure the image scales properly */
-    border-radius: 10px; /* Optional: Rounded corners */
+    width: 100%; 
+    border-radius: 10px; 
 }
 
 #carousel-buttons {
     display: flex;
-    justify-content: center; /* Center the buttons horizontally */
-    gap: 10px; /* Add spacing between the buttons */
-    margin-top: 10px; /* Space between the image and the buttons */
-    width: 100%; /* Match the carousel container width */
+    justify-content: center; 
+    gap: 10px; 
+    margin-top: 10px;
+    width: 100%; 
 }
 
 .button-link {
@@ -197,6 +197,6 @@ p{
 }
 
 #carousel-buttons .button-link {
-    margin: 0; /* Remove default margins */
-    padding: 10px 10px; /* Maintain button padding */
+    margin: 0; 
+    padding: 10px 10px; 
 }
