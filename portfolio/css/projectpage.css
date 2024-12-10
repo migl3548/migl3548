@@ -21,16 +21,13 @@ body {
     background-color: rgba(0, 0, 0, 0.4); 
     backdrop-filter: blur(5px); 
     width: 900px;
-    min-height: 300px;
+    height: 300px;
     border-radius: 25px;
     border: 2px solid transparent; 
     box-sizing: border-box;
-    overflow: visible;
+    overflow: hidden;
     color: white;
     transition: border-color 0.3s ease; 
-
-    flex-wrap: wrap; 
-    align-items: flex-start;
 }
 
 .project:hover {
@@ -41,11 +38,6 @@ body {
 .project img{
    width:20vw; 
    border-radius: 15px;
-
-   flex-shrink: 0; /* Prevent the image from shrinking */
-    width: 20vw; 
-    border-radius: 15px;
-    margin-right: 20px; /* Add spacing between the image and text */
 }
 
 .project h2,
@@ -74,12 +66,6 @@ body {
     font-family: "adapter-mono-pe-variable", sans-serif;
     font-variation-settings: "BORD" 300, "ital" 0, "slnt" 0, "wght" 400;
     padding: 10px;
-
-    flex: 1; /* Allow the paragraph to take up remaining space */
-    font-family: "adapter-mono-pe-variable", sans-serif;
-    font-variation-settings: "BORD" 300, "ital" 0, "slnt" 0, "wght" 400;
-    padding: 10px;
-    word-wrap: break-word; /* Ensure long words break properly */
 }
 
 #buttons {
@@ -135,10 +121,20 @@ body {
     margin: 10px;
     transition: background-color 0.3s ease, color 0.3s ease;
     margin-left: 20vw;
-    margin-top: 20vh;
+    margin-top: 2vh;
 }
 
 .button-link:hover {
     background-color: rgba(255, 255, 255, 1);
     color: black;
+}
+
+h1 {
+    margin-bottom: 5px;
+    padding: 10px;
+    font-size: 60px;
+    font-family: "adapter-mono-pe-variable", sans-serif;
+    font-variation-settings: "BORD" 300, "ital" 0, "slnt" 0, "wght" 400;
+    color: white;
+    margin-left: 20vw;
 }
