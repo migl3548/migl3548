@@ -18,16 +18,16 @@ body {
     flex-direction: row;
     margin-top: 10px;
     padding: 15px 20px;
-    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
-    backdrop-filter: blur(5px); /* Adds blur effect behind the overlay */
+    background-color: rgba(0, 0, 0, 0.4); 
+    backdrop-filter: blur(5px); 
     width: 900px;
     height: 300px;
     border-radius: 25px;
-    border: 2px solid transparent; /* Start with no visible border */
+    border: 2px solid transparent; 
     box-sizing: border-box;
     overflow: hidden;
     color: white;
-    transition: border-color 0.3s ease; /* Smooth transition for the border */
+    transition: border-color 0.3s ease; 
 }
 
 .project:hover {
@@ -43,52 +43,58 @@ body {
 .project h2,
 .project h3 {
     font-family: Helvetica, sans-serif;
-    margin: 0; /* Removes default margins */
+    margin: 0; 
 }
 
 .project h2{
     margin-bottom: 5px;
     padding: 10px;
     font-size: 60px;
+    font-family: "adapter-mono-pe-variable", sans-serif;
+    font-variation-settings: "BORD" 300, "ital" 0, "slnt" 0, "wght" 400;
 }
 
 .project h3{
     margin-top: 0;
     padding: 10px;
     font-style: italic;
+    font-family: "adapter-mono-pe-variable", sans-serif;
+    font-variation-settings: "BORD" 300, "ital" 0, "slnt" 0, "wght" 200;
 }
 
 .project p{
-    font-family: Helvetica, sans-serif;
+    font-family: "adapter-mono-pe-variable", sans-serif;
+    font-variation-settings: "BORD" 300, "ital" 0, "slnt" 0, "wght" 400;
     padding: 10px;
 }
 
 #buttons {
     display: flex;
-    justify-content: flex-start; /* Align buttons to the left */
-    align-items: center; /* Vertically center the buttons if needed */
-    margin-bottom: 5px; /* Adds spacing below the buttons */
-    padding-left: 20vw; /* Aligns buttons with the left edge of the project images */
+    justify-content: flex-start; 
+    align-items: center; 
+    margin-bottom: 5px; 
+    padding-left: 20vw; 
     margin-top: 10px;
 }
 
 #buttons button {
-    background-color: transparent; /* Transparent background */
-    border: 2px solid white; /* Rounded border with white color */
-    border-radius: 25px; /* Rounded corners */
-    color: white; /* White text */
-    font-family: Helvetica, sans-serif; /* Helvetica font */
-    padding: 10px 20px; /* Adds padding for a better appearance */
-    font-size: 16px; /* Adjust text size */
-    cursor: pointer; /* Adds a pointer cursor for interactivity */
-    margin: 10px; /* Adds spacing between buttons */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+    background-color: transparent; 
+    border: 2px solid white; 
+    border-radius: 25px;
+    color: white; 
+    font-family: "adapter-mono-pe-variable", sans-serif;
+    font-variation-settings: "BORD" 300, "ital" 0, "slnt" 0, "wght" 100;
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    margin: 10px; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
-/* Hover Effect */
+
 #buttons button:hover {
-    background-color: rgba(255, 255, 255, 1); /* Solid white background */
-    color: black; /* Black text on hover */
+    background-color: rgba(255, 255, 255, 1); 
+    color: black; 
 }
 
 .navbar{
@@ -99,14 +105,15 @@ body {
     font-weight: 700;
 }
 
-/* Style the links as buttons */
+/* nav links */
 .button-link {
     display: inline-block;
     background-color: transparent;
     border: 2px solid black;
     border-radius: 25px;
     color: white;
-    font-family: Helvetica, sans-serif;
+    font-family: "adapter-mono-pe-variable", sans-serif;
+    font-variation-settings: "BORD" 300, "ital" 0, "slnt" 0, "wght" 100;
     padding: 10px 20px;
     font-size: 20px;
     cursor: pointer;

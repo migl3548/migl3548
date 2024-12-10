@@ -18,25 +18,24 @@ body {
     flex-direction: row;
     margin-top:10px;
     padding: 15px 20px;
-    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
-    backdrop-filter: blur(5px); /* Adds blur effect behind the overlay */
-    width: 900px; /* Sets the width */
-    height: 300px; /* Sets the height */
-    border-radius: 25px; /* Rounds the corners */
-    /* filter: drop-shadow(0 0 0.75rem blue); Adds a blue shadow */
-    box-sizing: border-box; /* Ensures padding doesn't affect width/height */
-    overflow: hidden; /* Clips content if it overflows the box */
-    color: white; /* Ensures text color contrasts the background */
+    background-color: rgba(0, 0, 0, 0.4); 
+    backdrop-filter: blur(5px); 
+    width: 900px; 
+    height: 300px; 
+    border-radius: 25px; 
+    box-sizing: border-box; 
+    overflow: hidden; 
+    color: white; 
 
     width: 100%; 
-    max-width: 900px; /* Caps the maximum width */
-    height: auto; /* Adjusts height based on content */
+    max-width: 900px; 
+    height: auto; 
 
     transition: background-color 0.3s ease;
 }
 
 .project:hover {
-    background-color: rgba(255, 255, 255, 0.4); /* Slightly less transparent on hover */
+    background-color: rgba(255, 255, 255, 0.4); 
 }
 
 .project img{
@@ -47,7 +46,7 @@ body {
 .project h2,
 .project h3 {
     font-family: Helvetica, sans-serif;
-    margin: 0; /* Removes default margins */
+    margin: 0; 
 }
 
 .project h2{
@@ -69,40 +68,41 @@ body {
 
 #navbuttons {
     display: flex;
-    justify-content: center; /* Align buttons to the left */
-    align-items: center; /* Vertically center the buttons if needed */
-    margin-bottom: 5px; /* Adds spacing below the buttons */
-    padding-left: 0vw; /* Aligns buttons with the left edge of the project images */
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: 5px; 
+    padding-left: 0vw; 
     margin-top: 5px;
 }
 
 #navbuttons button {
-    background-color: transparent; /* Transparent background */
-    border: 2px solid white; /* Rounded border with white color */
-    border-radius: 25px; /* Rounded corners */
-    color: white; /* White text */
-    font-family: Helvetica, sans-serif; /* Helvetica font */
-    padding: 10px 20px; /* Adds padding for a better appearance */
-    font-size: 16px; /* Adjust text size */
-    cursor: pointer; /* Adds a pointer cursor for interactivity */
-    margin: 10px; /* Adds spacing between buttons */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+    background-color: transparent; 
+    border: 2px solid white; 
+    border-radius: 25px; 
+    color: white;
+    font-family: Helvetica, sans-serif; 
+    padding: 10px 20px; 
+    font-size: 16px;
+    cursor: pointer; 
+    margin: 10px; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
-/* Hover Effect */
+
 #navbuttons button:hover {
-    background-color: rgba(255, 255, 255, 1); /* Solid white background */
-    color: black; /* Black text on hover */
+    background-color: rgba(255, 255, 255, 1); 
+    color: black; 
 }
 
-/* Style the links as buttons */
+/* nav links */
 .button-link {
     display: inline-block;
     background-color: transparent;
     border: 2px solid white;
     border-radius: 25px;
     color: white;
-    font-family: Helvetica, sans-serif;
+    font-family: "adapter-mono-pe-variable", sans-serif;
+    font-variation-settings: "BORD" 300, "ital" 0, "slnt" 0, "wght" 100;
     padding: 10px 20px;
     font-size: 20px;
     cursor: pointer;
@@ -140,8 +140,8 @@ h2 {
     font-size: 4vh;
     font-family: "adapter-mono-pe-variable", sans-serif;
     font-variation-settings: "BORD" 300, "ital" 0, "slnt" 0, "wght" 200;
-    
     text-align: center;
+    
 }
 
 img {
@@ -150,9 +150,13 @@ img {
 
 /* TRANSITION STUFF */
 
-/* Initial state for the page */
+/* fade in */
 h1,h2 {
-    animation: fadeIn 1s ease-in; /* Fade in animation */
+    animation: fadeIn 1s ease-in; 
+}
+
+#navbuttons {
+    animation: fadeIn 1s ease-in; 
 }
 
 
@@ -167,7 +171,7 @@ h1,h2 {
         opacity: 1;
     }
 }
-
+/* effect copied from internet: */
 /* Typewriter effect for h1 */
 .typewriter h1 {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
